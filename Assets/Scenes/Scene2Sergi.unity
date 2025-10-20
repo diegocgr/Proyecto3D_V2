@@ -5584,6 +5584,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProvaJavier
       objectReference: {fileID: 0}
+    - target: {fileID: 4709957167635100546, guid: c63806fd5308af94688652054df20d61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4769329056262792902, guid: c63806fd5308af94688652054df20d61,
         type: 3}
       propertyPath: m_Mesh
