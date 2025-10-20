@@ -1,0 +1,18 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 04.04.2021 15:26:40
+
+newmtl MI_Chair_Metal_Guest_Green
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka TX_WO_Chair_Metal_Guest_Green_Dif.png
+	map_Kd TX_WO_Chair_Metal_Guest_Green_Dif.png
+	map_Ks TX_WO_Chair_Metal_Guest_Green_Spc.png
+	map_bump TX_WO_Chair_Metal_Guest_Green_Nor.png
