@@ -22,7 +22,7 @@ public class Navegar : MonoBehaviour
 
     public void NavegarRyeko()
     {
-        SceneManager.LoadScene("Scene3RyekoFPS");
+        SceneManager.LoadScene("Scene3Ryeko");
     }
 
     public void NavegarSergi()
