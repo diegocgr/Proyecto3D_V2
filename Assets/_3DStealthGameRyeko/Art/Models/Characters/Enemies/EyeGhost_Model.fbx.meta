@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 009f66bc444b8ad44bf0df2c01396c89
+AssetOrigin:
+  serializedVersion: 1
+  productId: 143848
+  packageName: '3D Stealth Game: Haunted House'
+  packageVersion: 3.1
+  assetPath: Assets/_3DStealthGame/Art/Models/Characters/Enemies/EyeGhost_Model.fbx
+  uploadId: 770342
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -27,7 +34,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -85,7 +92,117 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: EyeGhost_Model(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeGhost
+      parentName: EyeGhost_Model(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: EyeGhost_Model(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine
+      parentName: Root
+      position: {x: -1.509929e-33, y: 0.25054827, z: -0.0033663712}
+      rotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Spine2
+      parentName: Spine
+      position: {x: -0.1039313, y: 2.3077385e-17, z: 0.000000032613617}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head
+      parentName: Spine2
+      position: {x: -0.35829976, y: 7.955853e-17, z: -7.7715635e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hat
+      parentName: Head
+      position: {x: -0.34344083, y: 7.6259184e-17, z: -0.000000032613617}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HatEND
+      parentName: Hat
+      position: {x: -0.08688925, y: 1.929329e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye
+      parentName: Head
+      position: {x: -0.10962903, y: 2.4342534e-17, z: 0.0035164894}
+      rotation: {x: -0.57171357, y: 0.41610518, z: 0.4161053, w: 0.5717136}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: EyeEND
+      parentName: Eye
+      position: {x: -0.23909214, y: -0.07739922, z: 1.1535759e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftArm
+      parentName: Spine2
+      position: {x: -0.012734349, y: -0.06493774, z: 0.06850425}
+      rotation: {x: -0.4999916, y: 0.5000084, z: 0.50000834, w: 0.49999163}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: LeftForeArm
+      parentName: LeftArm
+      position: {x: -0.06895134, y: 0.011311465, z: -7.724113e-10}
+      rotation: {x: -0, y: -0.000000029802319, z: -0.000036954876, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: LeftHand
+      parentName: LeftForeArm
+      position: {x: -0.031226268, y: -0.014287509, z: 9.759511e-10}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: LeftHandEND
+      parentName: LeftHand
+      position: {x: -0.026324498, y: -0.04108233, z: 0.000000002805534}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightArm
+      parentName: Spine2
+      position: {x: -0.012734616, y: 0.061579417, z: 0.06850457}
+      rotation: {x: 0.5000084, y: 0.49999163, z: 0.49999163, w: -0.5000084}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
+    - name: RightForeArm
+      parentName: RightArm
+      position: {x: 0.068951085, y: -0.011311465, z: -4.9575697e-18}
+      rotation: {x: -0, y: -0, z: -0.000036954876, w: 1}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
+    - name: RightHand
+      parentName: RightForeArm
+      position: {x: 0.031226095, y: 0.014287509, z: 1.786241e-17}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
+    - name: RightHandEND
+      parentName: RightHand
+      position: {x: 0.026324278, y: 0.04108233, z: -1.1297279e-13}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tail
+      parentName: Spine
+      position: {x: 0.0651866, y: -1.4474332e-17, z: -0.057216007}
+      rotation: {x: -0, y: -0.59902495, z: -0, w: 0.8007304}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Tail2
+      parentName: Tail
+      position: {x: -0.038638204, y: -3.898332e-19, z: -0.026827225}
+      rotation: {x: 0.000000035704666, y: -0.04361939, z: 0.000000047727244, w: 0.99904823}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Tail3
+      parentName: Tail2
+      position: {x: -0.055886887, y: -1.384304e-16, z: -0.015127861}
+      rotation: {x: 0.000000052529824, y: 0.38268343, z: 0.000000028166129, w: -0.92387956}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: TailEND
+      parentName: Tail3
+      position: {x: -0.05314829, y: 7.34069e-17, z: 0.060521044}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -96,7 +213,7 @@ ModelImporter:
     globalScale: 0.7
     rootMotionBoneName: Root
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
@@ -110,10 +227,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 143848
-  packageName: '3D Stealth Game: Haunted House'
-  packageVersion: 3.1
-  assetPath: Assets/_3DStealthGame/Art/Models/Characters/Enemies/EyeGhost_Model.fbx
-  uploadId: 770342
