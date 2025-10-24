@@ -12,6 +12,9 @@ public class DialogMessage : MonoBehaviour
 
     private DialogController dialogController;
 
+    // 内部の private 変数を安全に外部へ公開するための方法 Player3D からCharacterNameとMessageを読み取るため
+    public string CharacterName => characterName;
+    public string Message => message;
 
     private void Start()
     {
@@ -28,14 +31,41 @@ public class DialogMessage : MonoBehaviour
             originalColor = rend.material.color;
         */
     }
-   
+
     private void OnMouseEnter()
     {
-        this.gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+        // MeshRenderer を探す
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        if (meshRenderer != null)
+        {
+            this.gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+            return;
+        }
+
+        SkinnedMeshRenderer skinnedRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+        if (skinnedRenderer != null)
+        {
+            skinnedRenderer.material.color = Color.grey;
+            return;
+        }
+
     }
     private void OnMouseExit()
     {
-        this.gameObject.GetComponent<MeshRenderer>().material.color = Color.white;
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        if (meshRenderer != null)
+        {
+            this.gameObject.GetComponent<MeshRenderer>().material.color = Color.white;
+            return;
+        }
+
+        SkinnedMeshRenderer skinnedRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+        if (skinnedRenderer != null)
+        {
+            skinnedRenderer.material.color = Color.white;
+            return;
+        }
+
     }
 
 
@@ -46,5 +76,6 @@ public class DialogMessage : MonoBehaviour
             dialogController.ShowDialog(characterName, message); // トグル表示
         }
     }
+    
 }
 

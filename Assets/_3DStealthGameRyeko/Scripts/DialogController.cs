@@ -49,6 +49,16 @@ public class DialogController : MonoBehaviour
             */
             }
     }
+    // ダイアログを非表示にする関数 OnTriggerExit
+    public void HideDialog()
+    {
+        if (canvasPanel != null && canvasPanel.activeSelf)
+        {
+            canvasPanel.SetActive(false);
+            dialogActive = false;
+        }
+    }
+
 
 
 

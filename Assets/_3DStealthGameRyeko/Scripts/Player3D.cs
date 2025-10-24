@@ -1,9 +1,25 @@
-using System;
+﻿using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using System.Collections;
 
 public class Player3D : MonoBehaviour
 {
+    [SerializeField]
+    private DialogController dialogController; // メッセージ管理用
+
+    private DialogMessage triggerMessage;
+    private Coroutine hideCoroutine;
+
+    [SerializeField]
+    private Texture2D manoGato;
+
+
+    private void Start()
+    {
+        Cursor.SetCursor(manoGato, Vector2.zero, CursorMode.Auto);
+
+    }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Entrance")
@@ -13,12 +29,22 @@ public class Player3D : MonoBehaviour
                 other.gameObject.transform.GetChild(2).GetComponent<Animator>().Play("CerrarEntrada");
             }
         }
-
+        /*
+        if (triggerMessage != null)
+        {
+            dialogController.HideDialog();
+            triggerMessage = null;
+        }
+        */
     }
+
+
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Entrance")
+        Debug.Log("Trigger Enter: " + other.gameObject.name + " / Tag: " + other.gameObject.tag);
+
+        if (other.gameObject.tag == "Entrance")
         {
             if (other.gameObject.transform.GetChild(2).GetComponent<Animator>()) 
             {
@@ -33,7 +59,65 @@ public class Player3D : MonoBehaviour
             }
         }
 
+        if (other.gameObject.tag == "Pumpkin")
+        {
+            triggerMessage = other.GetComponent<DialogMessage>();
+
+            if (triggerMessage == null)
+                Debug.LogWarning("DialogMessage がついていません: " + other.gameObject.name);
+
+            if (triggerMessage != null && dialogController != null)
+            {
+                // メッセージ表示
+                dialogController.ShowDialog(triggerMessage.CharacterName, triggerMessage.Message);
+
+                // 既に消去コルーチンがあれば停止
+                if (hideCoroutine != null)
+                {
+                    StopCoroutine(hideCoroutine);
+                }
+
+                // 3秒後に自動でメッセージを消すコルーチンを開始
+                hideCoroutine = StartCoroutine(HideDialogAfterSeconds(3f));
+            }
+        }
+
+    
     }
+
+    // コルーチンで一定時間後にメッセージを消す
+    private IEnumerator HideDialogAfterSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+
+        if (dialogController != null)
+        {
+            dialogController.HideDialog();
+        }
+
+        triggerMessage = null;
+        hideCoroutine = null;
+
+    }
+}
+
+    /*
+    // コライダーが "MessageTrigger" タグを持っていた場合に表示
+    if (other.gameObject.tag == "Pumpkin")
+    {
+        // トリガーにメッセージ情報を持たせておく
+        triggerMessage = other.gameObject.GetComponent<DialogMessage>();
+        if (triggerMessage != null)
+        {
+            // DialogController にメッセージを表示させる
+            dialogController.ShowDialog(triggerMessage.CharacterName, triggerMessage.Message);
+        }
+    }
+    */
+
+
+
+
     //Accion o evento al conseguir o recoger una moneda
     //public static Action<int> OnConseguirMoneda;
 
@@ -93,5 +177,4 @@ public class Player3D : MonoBehaviour
         }
     }
     */
-}
-    
+

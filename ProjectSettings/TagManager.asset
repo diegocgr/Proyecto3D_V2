@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - Gargoyle
   - Entrance
+  - Pumpkin
   layers:
   - Default
   - TransparentFX

@@ -23,17 +23,16 @@ public class UIController : MonoBehaviour
     private bool estaLuzActiva;
     private int i;
 
-    /*
- private GameObject lightWall;
- [SerializeField]
- private GameObject monsterLamp;
- [SerializeField]
-*/
-
+ 
+    [SerializeField]
+    private Texture2D manoGato;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Cursor.SetCursor(manoGato, Vector2.zero, CursorMode.Auto);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
 
     }
 
@@ -117,46 +116,10 @@ public class UIController : MonoBehaviour
 
     }
 
-
-    /*
-     * public void ApagarEncenderLucesWall()
-    {
-        for(i = 0; i < lightWall.gameObject.transform.childCount; i++)
-        {
-            if (lightWall.gameObject.transform.GetChild(i).activeSelf)
-            {
-                lightWall.gameObject.transform.GetChild(i).gameObject.SetActive(true);
-            }
-            else
-            {
-                lightWall.gameObject.transform.GetChild(i).gameObject.SetActive(false);
-
-            }
-        }
-    }
-
-    public void ApagarEncenderLucesMonster()
-    {
-        for (i = 0; i < monsterLamp.gameObject.transform.childCount; i++)
-        {
-            if (monsterLamp.gameObject.transform.GetChild(i).activeSelf)
-            {
-                monsterLamp.gameObject.transform.GetChild(i).gameObject.SetActive(true);
-            }
-            else
-            {
-                monsterLamp.gameObject.transform.GetChild(i).gameObject.SetActive(false);
-
-            }
-        }
-    }
-    */
-
-
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name =="ScneneRyeko3FPS")
+        if (SceneManager.GetActiveScene().name == "Scene3RyekoCameras")
         { 
             if(Input.GetKeyDown(KeyCode.Escape)) 
             {
