@@ -23,7 +23,9 @@ public class UIController : MonoBehaviour
     private bool estaLuzActiva;
     private int i;
 
- 
+
+
+
     [SerializeField]
     private Texture2D manoGato;
 
@@ -35,6 +37,8 @@ public class UIController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
 
     }
+
+
 
     public void CambiarColor(string color)
     {
@@ -68,17 +72,41 @@ public class UIController : MonoBehaviour
 
     }
 
+    /*
+     public void CambiarCamaras(int posCamara)
+     {
+         for (i = 0; i < camaras.gameObject.transform.childCount; i++)
+         {
+             camaras.gameObject.transform.GetChild(i).gameObject.SetActive(false);
+         }
+         camaras.gameObject.transform.GetChild(posCamara).gameObject.SetActive(true);
+
+     }
+    */
+
     public void CambiarCamaras(int posCamara)
     {
         for (i = 0; i < camaras.gameObject.transform.childCount; i++)
         {
-            camaras.gameObject.transform.GetChild(i).gameObject.SetActive(false);
-        }
-        camaras.gameObject.transform.GetChild(posCamara).gameObject.SetActive(true);
+            GameObject cam = camaras.gameObject.transform.GetChild(i).gameObject;
 
+            if (i == posCamara)
+            {
+                cam.SetActive(true);
+                AudioListener listener = cam.GetComponent<AudioListener>();
+                if (listener != null) listener.enabled = true;
+            }
+            else
+            {
+                cam.SetActive(false);
+                AudioListener listener = cam.GetComponent<AudioListener>();
+                if (listener != null) listener.enabled = false;
+            }
+        }
     }
 
-     public void ApagarEncenderLuces()
+
+    public void ApagarEncenderLuces()
     {
         estaLuzActiva = false;
 
