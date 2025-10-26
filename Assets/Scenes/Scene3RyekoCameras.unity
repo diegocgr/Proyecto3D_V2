@@ -993,6 +993,48 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &308781305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4561047218253932717, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &308781309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308781305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneD
+  message: R.I.P
+--- !u!65 &308781310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308781305}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6059436, y: 0.49164426, z: 0.40395656}
+  m_Center: {x: -0.0017394428, y: 0.2230497, z: -0.000003032386}
 --- !u!1 &322905133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,6 +1615,48 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602985563}
   m_Mesh: {fileID: -7162020125171433132, guid: 05928b00c07a40243b5291d701c34851, type: 3}
+--- !u!1 &610135907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3922219894258301162, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &610135911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610135907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneA
+  message: R.I.P
+--- !u!65 &610135912
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610135907}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6059344, y: 0.7670234, z: 0.4128414}
+  m_Center: {x: -0.0000019073486, y: 0.36073935, z: 0.001504809}
 --- !u!1 &635437936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,6 +2790,46 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 585604817}
+    - targetCorrespondingSourceObject: {fileID: 3922219894258301162, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 610135911}
+    - targetCorrespondingSourceObject: {fileID: 3922219894258301162, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 610135912}
+    - targetCorrespondingSourceObject: {fileID: 2896094815845611515, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1229953161}
+    - targetCorrespondingSourceObject: {fileID: 2896094815845611515, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1229953162}
+    - targetCorrespondingSourceObject: {fileID: 7873260596935696765, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1601729323}
+    - targetCorrespondingSourceObject: {fileID: 7873260596935696765, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1601729324}
+    - targetCorrespondingSourceObject: {fileID: 4561047218253932717, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 308781309}
+    - targetCorrespondingSourceObject: {fileID: 4561047218253932717, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 308781310}
+    - targetCorrespondingSourceObject: {fileID: 8550069562844055886, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1115025746}
+    - targetCorrespondingSourceObject: {fileID: 8550069562844055886, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1115025747}
     - targetCorrespondingSourceObject: {fileID: 5770737661659706999, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
         type: 3}
       insertIndex: -1
@@ -4185,6 +4309,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106276820}
   m_CullTransparentMesh: 1
+--- !u!1 &1115025742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8550069562844055886, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1115025746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115025742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneAE
+  message: Rest in Peace
+--- !u!65 &1115025747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115025742}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6059436, y: 0.75011945, z: 0.40395653}
+  m_Center: {x: 0.000029444702, y: 0.3522873, z: -0.0000030547378}
 --- !u!1 &1151360117
 GameObject:
   m_ObjectHideFlags: 0
@@ -4426,6 +4592,48 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 774056986}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1229953157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2896094815845611515, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1229953161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229953157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneB
+  message: R.I.P
+--- !u!65 &1229953162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229953157}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5055082, y: 0.65917253, z: 0.4128414}
+  m_Center: {x: -0.0076972786, y: 0.30681384, z: -0.0015086163}
 --- !u!1 &1242276863
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,6 +5206,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1504451382}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1601729319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7873260596935696765, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1601729323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601729319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneC
+  message: R.I.P
+--- !u!65 &1601729324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601729319}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6059345, y: 0.7766409, z: 0.40395647}
+  m_Center: {x: 0, y: 0.365548, z: -0.0000038146973}
 --- !u!1 &1620371167
 GameObject:
   m_ObjectHideFlags: 0

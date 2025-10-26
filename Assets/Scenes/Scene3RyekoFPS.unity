@@ -295,6 +295,78 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &34189068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684358312}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5055082, y: 0.65917253, z: 0.4128414}
+  m_Center: {x: -0.0076972786, y: 0.30681384, z: -0.0015086163}
+--- !u!114 &34189069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684358312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneB
+  message: Rest in Peace
+--- !u!65 &47689191
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774056988}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6059436, y: 0.75011945, z: 0.40395653}
+  m_Center: {x: 0.000029444702, y: 0.3522873, z: -0.0000030547378}
+--- !u!114 &47689192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774056988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneE
+  message: Until we meet again
 --- !u!1 &51314825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,7 +1947,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4645342793679037187, guid: 98e4f88f6a84c184ca76ba7ec5102d07, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5132078270723012466, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
         type: 3}
@@ -1887,11 +1960,11 @@ PrefabInstance:
       addedObject: {fileID: 1912311599}
     - targetCorrespondingSourceObject: {fileID: 5132078270723012466, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
         type: 3}
-      insertIndex: 44
+      insertIndex: 43
       addedObject: {fileID: 794246326}
     - targetCorrespondingSourceObject: {fileID: 5132078270723012466, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
         type: 3}
-      insertIndex: 46
+      insertIndex: 45
       addedObject: {fileID: 1034348572}
     - targetCorrespondingSourceObject: {fileID: 1186570767419251779, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
         type: 3}
@@ -1954,6 +2027,46 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 585604817}
+    - targetCorrespondingSourceObject: {fileID: 3922219894258301162, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1684358319}
+    - targetCorrespondingSourceObject: {fileID: 3922219894258301162, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1684358318}
+    - targetCorrespondingSourceObject: {fileID: 2896094815845611515, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 34189069}
+    - targetCorrespondingSourceObject: {fileID: 2896094815845611515, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 34189068}
+    - targetCorrespondingSourceObject: {fileID: 7873260596935696765, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1684358317}
+    - targetCorrespondingSourceObject: {fileID: 7873260596935696765, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1684358316}
+    - targetCorrespondingSourceObject: {fileID: 4561047218253932717, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1684358315}
+    - targetCorrespondingSourceObject: {fileID: 4561047218253932717, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1684358314}
+    - targetCorrespondingSourceObject: {fileID: 8550069562844055886, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 47689192}
+    - targetCorrespondingSourceObject: {fileID: 8550069562844055886, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 47689191}
     - targetCorrespondingSourceObject: {fileID: 5770737661659706999, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
         type: 3}
       insertIndex: -1
@@ -2014,6 +2127,12 @@ PrefabInstance:
 --- !u!4 &774056987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5132078270723012466, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &774056988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8550069562844055886, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
     type: 3}
   m_PrefabInstance: {fileID: 774056986}
   m_PrefabAsset: {fileID: 0}
@@ -4227,6 +4346,138 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1684358310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4561047218253932717, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1684358311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7873260596935696765, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1684358312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2896094815845611515, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1684358313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3922219894258301162, guid: 98e4f88f6a84c184ca76ba7ec5102d07,
+    type: 3}
+  m_PrefabInstance: {fileID: 774056986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1684358314
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684358310}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6059436, y: 0.49164426, z: 0.40395656}
+  m_Center: {x: -0.0017394428, y: 0.2230497, z: -0.000003032386}
+--- !u!114 &1684358315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684358310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneD
+  message: Peaceful journey.
+--- !u!65 &1684358316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684358311}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6059345, y: 0.7766409, z: 0.40395647}
+  m_Center: {x: 0, y: 0.365548, z: -0.0000038146973}
+--- !u!114 &1684358317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684358311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneC
+  message: Gone too soon.
+--- !u!65 &1684358318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684358313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6059344, y: 0.7670234, z: 0.4128414}
+  m_Center: {x: -0.0000019073486, y: 0.36073935, z: 0.001504809}
+--- !u!114 &1684358319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684358313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4397fad61e7173419f9d79f9d1310e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acumulador: {fileID: 774056989}
+  characterName: GraveStoneA
+  message: R.I.P
 --- !u!114 &1773564187
 MonoBehaviour:
   m_ObjectHideFlags: 0
