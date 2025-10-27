@@ -36,6 +36,21 @@ public class Player3D : MonoBehaviour
             triggerMessage = null;
         }
         */
+
+        if (other.gameObject.tag == "Skull")
+        {
+
+
+           
+            if (hideCoroutine != null)
+            {
+                StopCoroutine(hideCoroutine);
+            }
+            hideCoroutine = StartCoroutine(HideDialogAfterSeconds(3f));
+            
+
+        }
+
     }
 
 
@@ -82,7 +97,38 @@ public class Player3D : MonoBehaviour
             }
         }
 
-    
+        if (other.gameObject.tag == "Skull")
+        {
+
+
+            if (dialogController != null)
+            {
+                dialogController.ShowDialog("Skull", "Alright, today’s unlucky victim is… oh, it’s you! Little Mortal, my bones can’t stop chuckling!"); // トグル表示
+            }
+            // triggerMessage = other.GetComponent<DialogMessage>();
+            //triggerMessage.Message = "texto de skull";
+            /*if (triggerMessage == null)
+                Debug.LogWarning("DialogMessage がついていません: " + other.gameObject.name);
+
+            if (triggerMessage != null && dialogController != null)
+            {
+                // メッセージ表示
+                dialogController.ShowDialog(triggerMessage.CharacterName, triggerMessage.Message);*/
+
+            // 既に消去コルーチンがあれば停止
+            /* if (hideCoroutine != null)
+            {
+                StopCoroutine(hideCoroutine);
+            }
+
+            // 3秒後に自動でメッセージを消すコルーチンを開始
+            hideCoroutine = StartCoroutine(HideDialogAfterSeconds(3f));
+            */
+        
+        }
+
+
+
     }
 
     // コルーチンで一定時間後にメッセージを消す

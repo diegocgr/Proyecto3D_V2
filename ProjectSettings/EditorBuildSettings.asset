@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene3RyekoCameras.unity
     guid: 23e649ed808b37c4eb4e8d4dfe73f415
   - enabled: 1
+    path: Assets/Scenes/Scene3RyekoSinInteractive.unity
+    guid: 0c9b9e62ad7a8ae4b88c2d2e89df34bc
+  - enabled: 1
     path: Assets/Scenes/SceneDiego.unity
     guid: 4e18009a71f237e4390555db1e00c1c6
   m_configObjects: {}

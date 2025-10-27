@@ -25,40 +25,51 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Scene3RyekoCameras");
     }
 
-    /*
+
   // SinInteractivoのシーンへ
   public void GoToSinInteractivo()
   {
-      SceneManager.LoadScene("SinInteractivoScene");
+      SceneManager.LoadScene("Scene3RyekoSinInteractive");
   }
 
-
-  // ゲーム終了ボタン（任意）
-  public void QuitGame()
-  {
-      Debug.Log("Juego cerrado.");
-      Application.Quit();
-  }
-  */
+    /*
+// ゲーム終了ボタン（任意）
+public void QuitGame()
+{
+  Debug.Log("Juego cerrado.");
+  Application.Quit();
+}
+*/
 
 
     // Canvas のオンオフを切り替える
     public void ToggleMenu()
     {
-        if (isMenuActive)
+        if (SceneManager.GetActiveScene().name== "Scene3RyekoSinInteractive")
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            isMenuActive = !isMenuActive;
+            canvasScene.SetActive(isMenuActive);
         }
-        else {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
+        else
+        {
+            isMenuActive = !isMenuActive;
+            canvasScene.SetActive(isMenuActive);
+            if (canvasScene.activeSelf)
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
-
         if (canvasScene == null) return;
 
-        isMenuActive = !isMenuActive;
-        canvasScene.SetActive(isMenuActive);
+        
         Debug.Log("Canvas " + (isMenuActive ? "表示中" : "非表示"));
     }
 
@@ -67,7 +78,7 @@ public class SceneController : MonoBehaviour
     void Update()
     {
         // ESCキーでCanvasのオンオフ
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             ToggleMenu();
         }

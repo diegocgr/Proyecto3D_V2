@@ -8,6 +8,7 @@ TagManager:
   - Gargoyle
   - Entrance
   - Pumpkin
+  - Skull
   layers:
   - Default
   - TransparentFX

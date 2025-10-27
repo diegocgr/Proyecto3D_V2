@@ -16,5 +16,6 @@ public class SalirEscena : MonoBehaviour
         {
             SceneManager.LoadScene("MenuPrincipalScene");
         }
+        
     }
 }
