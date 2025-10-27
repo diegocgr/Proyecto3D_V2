@@ -3,6 +3,7 @@ using UnityEngine;
 public class ClickToAnimate : MonoBehaviour
 {
     private Animator animator;
+    private bool abierto = false;
 
     void Start()
     {
@@ -11,8 +12,15 @@ public class ClickToAnimate : MonoBehaviour
 
     void OnMouseDown()
     {
-        
-        animator.Play("Caixaobrir");
-        
+        if (!abierto)
+        {
+            animator.Play("Caixaobrir");
+        }
+        else
+        {
+            animator.Play("Caixatancar");
+        }
+
+        abierto = !abierto; // Alternar estado
     }
 }
