@@ -7,7 +7,7 @@ public class PrimeraPersona : MonoBehaviour
     public void CambiarEscena()
     {
         //Debug.Log("Voy a cambiar de escena");
-        SceneManager.LoadScene("PrimeraPersona");
+        SceneManager.LoadScene("Scene3RyekoFPS");
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

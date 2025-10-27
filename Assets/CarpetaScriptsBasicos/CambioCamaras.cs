@@ -7,7 +7,7 @@ public class CambioCamaras : MonoBehaviour
     public void CambiarEscena()
     {
         //Debug.Log("Voy a cambiar de escena");
-        SceneManager.LoadScene("CambioDeCamaras");
+        SceneManager.LoadScene("Scene2Sergi");
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
