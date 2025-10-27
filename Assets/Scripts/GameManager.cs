@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Camera cameraKitchen;
     public Camera cameraBathroom;
     public Camera cameraExterior;
+    public Camera cameraTV;
 
     [Header("Jugador (FPS Controller)")]
     public GameObject playerController;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
         cameraKitchen.enabled = false;
         cameraBathroom.enabled = false;
         cameraExterior.enabled = false;
+        cameraTV.enabled = false;
         playerController.SetActive(false);
 
         currentCamera = cameraRoom1;
@@ -97,6 +99,7 @@ public class GameManager : MonoBehaviour
     public void ViewKitchen()   { Debug.Log("Cambiando a Kitchen");SetActiveCamera(cameraKitchen); }
     public void ViewBathroom()  { Debug.Log("Cambiando a Bathroom");SetActiveCamera(cameraBathroom); }
     public void ViewExterior() { Debug.Log("Cambiando a Exterior"); SetActiveCamera(cameraExterior); }
+    public void ViewTV() { Debug.Log("Cambiando a TV"); SetActiveCamera(cameraTV); }
 
     // ----------- ACTIVAR FPS MODE -----------
     public void ViewFirstPerson()
