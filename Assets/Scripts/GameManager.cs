@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public Camera cameraBathroom;
     public Camera cameraExterior;
     public Camera cameraTV;
+    public Camera cameraHeather;
 
     [Header("Jugador (FPS Controller)")]
     public GameObject playerController;
@@ -28,15 +29,17 @@ public class GameManager : MonoBehaviour
         panelMenu.SetActive(false);
 
          // Forzar estado inicial de cámaras
-        cameraRoom1.enabled = true;
-        cameraRoom2.enabled = false;
+        cameraRoom1.enabled = false;
+        cameraRoom2.enabled = true;
         cameraKitchen.enabled = false;
         cameraBathroom.enabled = false;
         cameraExterior.enabled = false;
         cameraTV.enabled = false;
+        cameraHeather.enabled = false;
         playerController.SetActive(false);
 
-        currentCamera = cameraRoom1;
+        // currentCamera = cameraRoom1;
+        currentCamera = cameraRoom2;
     }
 
     // Update is called once per frame
@@ -100,6 +103,7 @@ public class GameManager : MonoBehaviour
     public void ViewBathroom()  { Debug.Log("Cambiando a Bathroom");SetActiveCamera(cameraBathroom); }
     public void ViewExterior() { Debug.Log("Cambiando a Exterior"); SetActiveCamera(cameraExterior); }
     public void ViewTV() { Debug.Log("Cambiando a TV"); SetActiveCamera(cameraTV); }
+    public void ViewHeather() { Debug.Log("Cambiando a Heather"); SetActiveCamera(cameraHeather); }
 
     // ----------- ACTIVAR FPS MODE -----------
     public void ViewFirstPerson()
